@@ -1,0 +1,1 @@
+window.__ENV = {"NEXT_PUBLIC_API":"http://98.66.152.215:8040"};
