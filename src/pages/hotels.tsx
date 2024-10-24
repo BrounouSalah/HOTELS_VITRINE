@@ -129,7 +129,7 @@ export default function HotelsPages({ hotels }: Props) {
 
 export async function getStaticProps(): Promise<GetStaticPropsResult<Props>> {
   const res = await fetch(
-    process.env.NEXT_PUBLIC_API + "/hotels?offset=0&limit=1000"
+    process.env.NEXT_PUBLIC_API + "/hotels/active?offset=0&limit=1000"
   );
   const data = await res.json();
   return {

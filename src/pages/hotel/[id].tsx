@@ -657,7 +657,7 @@ export async function getServerSideProps(context) {
     const data = await hotelData.json();
 
     const servicesData = await fetch(
-      `${process.env.NEXT_PUBLIC_API}/services/hotel/${id}`
+      `${process.env.NEXT_PUBLIC_API}/services/hotel/showed/${id}`
     );
     const services = await servicesData.json();
 
